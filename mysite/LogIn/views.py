@@ -11,7 +11,7 @@ import json
 
 # Create your views here.
 def home(request):
-        return render(request, "LogIn/index.html")
+        return render(request, "Homepage/homepage.html")
 
 def signup(request):
         user = request.user
@@ -53,15 +53,14 @@ def signin(request):
 
                 if user:
                         login(request,user)
-                        print("HTE")
-                        return redirect('signup')
+                        return redirect('home')
         else:
                 form = LoginForm()
         
         context = {
                 'form':form
         }
-        template_name = "Login/signin.html"
+        template_name = "Login/index.html"
         return render(request = request, template_name= template_name,context= context )
 
 def signout(request):
