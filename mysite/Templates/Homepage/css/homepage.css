@@ -24,8 +24,9 @@ body{
     color: #FDA920;
 }
 .headline{
-  background-image: url("https://cdn.discordapp.com/attachments/974011225849614346/974873208073375744/Login_BG.jpg");
+  background-image: url("https://cdn.discordapp.com/attachments/974504254318444584/975155936723370024/karsten-winegeart-5sGYotxAuUA-unsplash.jpg");
   background-repeat: no-repeat;
+  top: 100px;
   background-size: 100%;
   height: 30vh;
 }
