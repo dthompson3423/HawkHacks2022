@@ -5,15 +5,3 @@ body{
 h3 {
   color: blue;
 }
-
-.uppernav{
-  display: inline;
-}
-
-.gold-title{
-    color: yellow;
-}
-
-.headline h3{
-  display: flex;
-}
