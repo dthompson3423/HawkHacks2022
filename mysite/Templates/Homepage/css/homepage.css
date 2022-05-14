@@ -1,15 +1,41 @@
 body{
-  background-image: https://cdn.discordapp.com/attachments/974011225849614346/974873208073375744/Login_BG.jpg;
+
+
+  font-family: Verdana;
+  text-align: center;
+  color: white
 }
 
 .uppernav{
-  display: inline;
+  background-color: #FDA920;
+  width: 100%;
+}
+
+#logo{
+  display: inline-block;
+  align: left;
+}
+#welcome{
+  display: inline-block;
+  align: right;
 }
 
 .gold-title{
-    color: yellow;
+    color: #FDA920;
 }
-
+.headline{
+  background-image: url("https://cdn.discordapp.com/attachments/974011225849614346/974873208073375744/Login_BG.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 30vh;
+}
 .headline h3{
-  display: flex;
+  display: inline-block;
+  align-items: center;
+}
+.discription{
+  background-image: url("https://cdn.discordapp.com/attachments/974011225849614346/974873208073375744/Login_BG.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 20px;
 }
