@@ -1,22 +1,37 @@
+{% load static %}
+
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>HawkHacks</title>
-    <link rel="stylesheet" href="/css/master.css"/>
-  </head>
-  <body>
-    <h3>Login to Your Account</h3>
-    <form class="" action="/signin" method="post">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <label for="">UserName</label>
-    <input type="text" id="userName" name="username" placeholder="Username" required>
-    <input type="text" id="password" name="password" placeholder="password" required>
-    </form>
+    <!-- Link css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
 
-    <button type = "submit">Sign In</button>
-    <button type = "submit"><a href="/app">Cancel</a></button>
-  <p>Don't have an account? <a href="signup">Sign Up</a> </p>
+    <!-- Link script -->
+    <script type="text/javascript" src="{% static 'script.js' %}"></script>
 
-  </body>
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-page">
+        <h1 class="title">INSERT TITLE HERE</h1>
+        <div class="container container--login">
+            <h2>Login</h2>
+            
+            <form  method="POST" class="login-form">
+                {% csrf_token %}
+            
+                <input type="email" class="inputField" name="email" placeholder="Email" required>
+                <input type="password" class="inputField" name="password" placeholder="Password" required>
+                
+                <button class="button" type="submit">Login</button>
+
+                <h3>Need an account? Create one <a href="{% url 'signup' %}"><u>here</u></a></h1>
+            </form>
+        </div>
+    </div>
+</body>
 </html>
