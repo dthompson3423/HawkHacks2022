@@ -19,6 +19,7 @@ from LogIn import views as v_login
 
 urlpatterns = [
     path('', include('LogIn.urls')),
+     path('signup', v_login.signup, name="signup"),
     path('app/', include('myapp.urls')),
     path('admin/', admin.site.urls)
     

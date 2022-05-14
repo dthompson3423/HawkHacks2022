@@ -6,7 +6,8 @@
   </head>
   <body>
     <h3>SignUp</h3>
-    <form action="/signup" method="post">
+    <form method="post">
+      {% csrf_token %}
       <label for="">UserName</label>
       <input type="text" id="userName" name="username" placeholder="Create a username" required>
       
@@ -17,16 +18,19 @@
       <input type="text" id="lastname" name="lastname" placeholder="Enter your lastname" required>
 
       <label for="">Email Address</label>
-      <input type="text" id="emailaddress" name="emailaddress" placeholder="email address" required>
+      <input type="text" id="email" name="email" placeholder="email address" required>
 
       <label for="">Password</label>
-      <input type="text" id="pass1" name="password" placeholder="password" required>
+      <input type="text" id="pass1" name="pass1" placeholder="password" required>
 
       <label for="">Confirm Password</label>
-      <input type="text" id="pass2" name="confirmpassword" placeholder="confirm password" required>
+      <input type="text" id="pass2" name="pass2" placeholder="confirm password" required>
+
+      <button type = "submit">Confirm</button>
+    
     </form>
 
-    <button type = "submit">Confirm</button>
+    
     <a href="home">Cancel</a>
     
   </body>
