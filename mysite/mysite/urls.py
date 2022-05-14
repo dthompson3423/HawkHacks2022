@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from LogIn import views as v_login
 
 urlpatterns = [
     path('', include('LogIn.urls')),

@@ -6,10 +6,10 @@
   </head>
   <body>
     <h3>SignUp</h3>
-    <form class="" action="signup.html" method="post">
+    <form action="/signup" method="post">
       <label for="">UserName</label>
       <input type="text" id="userName" name="username" placeholder="Create a username" required>
-
+      
       <label for="">FirstName</label>
       <input type="text" id="firstname" name="firstname" placeholder="Enter your firstname" required>
 
@@ -20,10 +20,14 @@
       <input type="text" id="emailaddress" name="emailaddress" placeholder="email address" required>
 
       <label for="">Password</label>
-      <input type="text" id="password" name="password" placeholder="password" required>
+      <input type="text" id="pass1" name="password" placeholder="password" required>
 
       <label for="">Confirm Password</label>
-      <input type="text" id="confirmpassword" name="confirmpassword" placeholder="confirm password" required>
+      <input type="text" id="pass2" name="confirmpassword" placeholder="confirm password" required>
     </form>
+
+    <button type = "submit">Confirm</button>
+    <a href="home">Cancel</a>
+    
   </body>
 </html>
