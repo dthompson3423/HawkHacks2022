@@ -3,13 +3,14 @@ from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate
 from myapp.models import Account
+from django.contrib.auth.models import User
 
 # Registration Form
 class RegisterForm(UserCreationForm):
     email = forms.EmailField(max_length=60)
 
     class Meta:
-        model = Account
+        model = User
         fields = ("email", "username", "password1", "password2")
 
 # Login Form
