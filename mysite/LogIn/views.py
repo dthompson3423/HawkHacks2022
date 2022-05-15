@@ -45,9 +45,18 @@ def signin(request):
 
                 if user is not None:
                         login(request, user)
-                        return render(request, "Homepage/homepage.html")
+                        return redirect('homepage')
         messages.error(request, "Unable to login!")
         return render(request, "LogIn/index.html")
+def homepage_view(request):
+        username = ""
+        if request.method == 'POST':
+                username = request.POST['username']
+        
 
+        context = {
+                "user": username
+        }
+        return render(request, "Homepage/homepage.html")
 def signout(request):
         pass
