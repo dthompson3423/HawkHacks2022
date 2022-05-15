@@ -45,7 +45,8 @@ def signin(request):
 
                 if user is not None:
                         login(request, user)
-                        return render(request, "Homepage/homepage.html")
+                        fname = user.first_name
+                        return render(request, "Homepage/homepage.html", {'fname': fname})
         messages.error(request, "Unable to login!")
         return render(request, "LogIn/index.html")
 
