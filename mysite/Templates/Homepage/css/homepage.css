@@ -27,11 +27,13 @@ body{
   background-repeat: no-repeat;
   background-position: 125px;
   background-size: cover;
-  height: 30vh;
+
 }
 .headline h3{
   display: inline-block;
   align-items: center;
+  height: 30vh;
+  font-size: 35px;
 }
 .discription{
   background-image: url("https://cdn.discordapp.com/attachments/974011225849614346/974873208073375744/Login_BG.jpg");
