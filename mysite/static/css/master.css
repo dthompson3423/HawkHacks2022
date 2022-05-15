@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Century Gothic';
+  src: url(../font/CenturyGothic.ttf);
+}
+
 .background-image{
   background-image: '/Login_Signup_Background.png';
   background-size: contain;
@@ -10,18 +15,23 @@ body{
   background-image: url('../images/Login_Signup_Background.png');
   background-repeat: no-repeat;
   background-size: cover;
+  justify-content: center;
   font-family: Verdana;
   text-align: center;
   height:100vh;
 }
 h2 {
+  font-family: 'CenturyGothic', sans-serif;
+
   color: white;
 }
 
 h3 {
+  font-family: 'CenturyGothic', sans-serif;
   color: white;
 }
 h3 a{
+  font-family: 'CenturyGothic', sans-serif;
   color: #FDA920;
 }
 
@@ -31,20 +41,25 @@ img{
 }
 
 .logo {
-  background-image: url('../images/logo.png');
-  background-size: fill;
-  height:100px;
-  width:100px;
-  font-family: Verdana;
-  text-align: center;
+  background-image: url('../images/Logo_transparent.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  height:350px;
+  width:350px;
 }
 
 .inputField{
-  border: 2px solid #FDA920;
+  border: 5px solid #FDA920;
   padding: 5px;
   border-radius: 25px;
   margin: 5px;
-  background-color: #494641;
+  height: 20px;
+  width: 200px;
+  
 }
 #login-page{
   text-align: center;
@@ -70,10 +85,13 @@ input{
   color:white;
 }
 
+
 .button{
-  border-radius: 20px;
-  font-size:20px;
-  border: 2px solid #FDA920;
+  font-family: 'CenturyGothic', sans-serif;
+  font-size: 40px;
+  border:none;
+  color: #FDA920;
+  background-color: transparent;
   padding:5px;
-  width:5%;
+  width:22%;
 }
