@@ -1,8 +1,5 @@
 body{
-<<<<<<< HEAD
-=======
   height: 100%;
->>>>>>> d37470904d44b1fdae747d7d437290ac2924c835
   font-family: Verdana;
   text-align: center;
   color: white;
@@ -38,7 +35,7 @@ body{
   height: 30vh;
   font-size: 35px;
 }
-.discription{
+.description{
   background-image: url("https://cdn.discordapp.com/attachments/974011225849614346/974873208073375744/Login_BG.jpg");
   background-repeat: no-repeat;
   background-size: 100%;

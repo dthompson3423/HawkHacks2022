@@ -31,8 +31,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'Videos.apps.MyappConfig',
     'LogIn.apps.MyappConfig',
     'myapp.apps.MyappConfig',
+    'embed_video',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -56,7 +58,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'Templates'],
+        'DIRS': [BASE_DIR / 'Templates', BASE_DIR.joinpath()],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

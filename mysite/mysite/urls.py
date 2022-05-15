@@ -20,6 +20,7 @@ from LogIn import views as v_login
 urlpatterns = [
     path('', include('LogIn.urls')),
     path('app/', include('myapp.urls')),
-    path('admin/', admin.site.urls)
+    path('admin/', admin.site.urls),
+    path('videos/', include('Videos.urls'))
     
 ]
