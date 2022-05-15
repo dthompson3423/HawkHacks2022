@@ -11,11 +11,9 @@ import json
 
 # Create your views here.
 def home(request):
-        return render(request, "Homepage/homepage.html")
+        return render(request, "LogIn/index.html")
 
 def signup(request):
-        user = request.user
-        
         if request.method == 'POST':
                 username = request.POST['username']
                 email = request.POST['email']
@@ -24,7 +22,7 @@ def signup(request):
                 pass1 = request.POST['password1']
                 pass2 = request.POST['password2']
 
-                if authenticate(username) is None and pass1==pass2:
+                if authenticate(username) is None and authenticate(email) is None and pass1==pass2:
                         myuser = User.objects.create_user(username, email, pass1)
                         myuser.unlocked = 1
                         myuser.firstname = fname
@@ -34,34 +32,22 @@ def signup(request):
 
                         messages.success(request, "Your account has been successfully created")
 
-                        return redirect('home')
+                        return redirect('signin')
                 messages.error(request, "Account cannot be created!")
         return render(request, "LogIn/signup.html")
-        
+
 def signin(request):
-        user = request.user
+        if request.method == 'POST':
+                username = request.POST['username']
+                password = request.POST['password']
 
-        if user.is_authenticated:
-                return redirect('home')
-        
-        if request.POST:
-                form = LoginForm(request.POST)
-                if form.is_valid():
-                        email = request.POST['email']
-                        password = request.POST['password']
-                        user = authenticate(email=email,password = password)
+                user = authenticate(username=username, password=password)
 
-                if user:
-                        login(request,user)
-                        return redirect('home')
-        else:
-                form = LoginForm()
-        
-        context = {
-                'form':form
-        }
-        template_name = "Login/index.html"
-        return render(request = request, template_name= template_name,context= context )
+                if user is not None:
+                        login(request, user)
+                        return render(request, "Homepage/homepage.html")
+        messages.error(request, "Unable to login!")
+        return render(request, "LogIn/index.html")
 
 def signout(request):
         pass

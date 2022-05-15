@@ -34,18 +34,18 @@
           <br>
             <h2>Login to Your Account</h2>
 
-            <form  method="POST" class="login-form">
+            <form  method="post">
                 {% csrf_token %}
                 <br>
 
-                <input type="email" class="inputField" name="email" placeholder="UserName" required>
+                <input type="username" class="inputField" name="username" placeholder="Username" required>
                 <br>
                 <input type="password" class="inputField" name="password" placeholder="Password" required>
                 <br>
                 <button class="button" type="submit">Login</button>
                 <br>
-                <h3>Don't have an account?<a href="{% url 'signup' %}"><u>Sign up</u></a></h1>
             </form>
+            <h3>Don't have an account?<a href="{% url 'signup' %}"><u>Sign up</u></a></h1>
         </div>
     </div>
 </body>
