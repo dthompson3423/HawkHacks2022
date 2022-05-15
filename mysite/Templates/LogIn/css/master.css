@@ -1,0 +1,47 @@
+
+body{
+  background-image: url('https://cdn.discordapp.com/attachments/974011225849614346/974873208073375744/Login_BG.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Verdana;
+  text-align: center;
+}
+h2 {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+h3 a{
+  color: #FDA920;
+}
+
+.inputField{
+  border: 2px solid #FDA920;
+  padding: 5px;
+  border-radius: 25px;
+  margin: 5px;
+  background-color: #494641;
+}
+#login-page{
+  text-align: center;
+}
+.inputarea{
+    border: 2px solid #FDA920;
+    padding: 5px;
+    border-radius: 25px;
+    margin: 5px;
+    background-color: #494641;
+    width: 40%;
+    margin: auto;
+}
+
+input{
+  text-align: center;
+  width: 95%;
+  height: auto;
+  border: 0px;
+  background-color: #494641;
+  align-self: center;
+}
