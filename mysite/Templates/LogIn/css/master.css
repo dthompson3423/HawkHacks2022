@@ -40,7 +40,7 @@ h3 a{
 input{
   text-align: center;
   width: 95%;
-  height: 100%;
+  height: auto;
   border: 0px;
   background-color: #494641;
   align-self: center;
