@@ -45,10 +45,23 @@ def signin(request):
 
                 if user is not None:
                         login(request, user)
+<<<<<<< HEAD
                         fname = user.first_name
                         return render(request, "Homepage/homepage.html", {'fname': fname})
+=======
+                        return redirect('homepage')
+>>>>>>> f9b6dee9b6c76b19068bc33a5801341aa046ce26
         messages.error(request, "Unable to login!")
         return render(request, "LogIn/index.html")
+def homepage_view(request):
+        username = ""
+        if request.method == 'POST':
+                username = request.POST['username']
+        
 
+        context = {
+                "user": username
+        }
+        return render(request, "Homepage/homepage.html")
 def signout(request):
         pass
