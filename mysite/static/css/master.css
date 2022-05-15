@@ -25,6 +25,20 @@ h3 a{
   color: #FDA920;
 }
 
+img{
+  height:100px;
+  width:100px;
+}
+
+.logo {
+  background-image: url('../images/logo.png');
+  background-size: fill;
+  height:100px;
+  width:100px;
+  font-family: Verdana;
+  text-align: center;
+}
+
 .inputField{
   border: 2px solid #FDA920;
   padding: 5px;

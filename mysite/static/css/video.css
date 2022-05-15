@@ -1,0 +1,8 @@
+.background{
+    background-image: url('../images/Video_Screen.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Verdana;
+    text-align: center;
+    height:100vh;
+  }

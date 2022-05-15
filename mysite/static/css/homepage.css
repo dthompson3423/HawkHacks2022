@@ -1,13 +1,24 @@
 body{
-  height: 100%;
+  background-image: url('../images/karsten-winegeart-5sGYotxAuUA-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: Verdana;
   text-align: center;
-  color: white;
+  height:100vh;
 }
+p{
+  font-size: 20px;
+  color:#FDA920;
+}
+
 
 .uppernav{
   background-color: #FDA920;
   width: 100%;
+}
+a{
+  color: #FDA920;
+  font-size: 20px;
 }
 
 #logo{
@@ -22,8 +33,15 @@ body{
 .gold-title{
     color: #FDA920;
 }
+.white-title{
+  color: whitesmoke;
+}
+.welcome{
+  font-size: 20px;
+  text-align: center;
+  font-style: italic;
+}
 .headline{
-  background-image: url("https://cdn.discordapp.com/attachments/974504254318444584/975155936723370024/karsten-winegeart-5sGYotxAuUA-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: 125px;
   background-size: cover;
@@ -41,3 +59,4 @@ body{
   background-size: 100%;
   padding: 20px;
 }
+
