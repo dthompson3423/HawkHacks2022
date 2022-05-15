@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Century Gothic';
+    src: url(../font/CenturyGothic.ttf);
+  }
+  
+  @font-face {
+    font-family: 'Century Gothic Bold';
+    src: url(../font/gothicb.ttf);
+  }
+  
+  .background-image{
+    background-image: '/Login_Signup_Background.png';
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 100vh
+  }
+  
+  body{
+    font-family: 'Century Gothic', sans-serif;
+    background-image: url('../images/Login_Signup_Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    height:100vh;
+  }
+  h2 {
+    font-family: 'Century Gothic Bold', sans-serif;
+    font-size: 50px;
+    margin-top: -5%;
+    margin-bottom: -0.0%;
+    color: white;
+  }
+  
+  a{
+      color:white
+  }
+
+  h3 {
+    font-family: 'Century Gothic', sans-serif;
+    color: white;
+  }
+  h3 a{
+    font-family: 'Century Gothic', sans-serif;
+    color: #FDA920;
+  }
+  
+  img{
+    height:100px;
+    width:100px;
+  }
+  
+  .logo {
+    background-image: url('../images/Logo_transparent.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    margin-top: -2%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    height:350px;
+    width:350px;
+  }
+  
+  .back-arrow{
+
+  }
+  
+  .inputField{
+    font-family: 'Century Gothic Bold', sans-serif;
+    font-size: 16px;
+    background:none;
+    text-align: left;
+    text-indent: 5%;
+    background-color: transparent !important;
+    border:3px solid #FDA920;
+    padding: 5px;
+    border-radius: 25px;
+    margin: 12px;
+    height: 40px;
+    width: 300px;
+    color: white;  
+  }
+  
+  #login-page{
+    color:white;
+  }
+  
+  button{
+    font-family: 'Century Gothic Bold', sans-serif;
+    font-size: 40px;
+    font-style: bold;
+    margin-top: 0.5%;
+    border:none;
+    color: #FDA920;
+    background-color: transparent;
+    padding:5px;
+    width:22%;
+  }
+  
+  button:hover{
+    font-size: 50px;
+  }
