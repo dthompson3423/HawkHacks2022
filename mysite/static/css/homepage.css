@@ -1,33 +1,114 @@
+@font-face {
+  font-family: 'Century Gothic';
+  src: url(../font/CenturyGothic.ttf);
+}
+
+@font-face {
+  font-family: 'Century Gothic Bold';
+  src: url(../font/gothicb.ttf);
+}
+
 body{
-  background-image: url('../images/karsten-winegeart-5sGYotxAuUA-unsplash.jpg');
+  background-image: url('../images/Homepage-Background.png');
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: Verdana;
   text-align: center;
   height:100vh;
 }
+
+b{
+  font-family: 'Century Gothic Bold', sans-serif;
+  font-size: 26px;
+  font-style: bold;
+  margin-top: 1%;
+  border:none;
+  float: right;
+  margin-top: -43%;
+  color: white;
+  background-color: transparent;
+  padding:5px;
+  width:22%;
+}
+
+c{
+  font-family: 'Century Gothic Bold', sans-serif;
+  font-size: 26px;
+  font-style: bold;
+  float:right;
+  text-indent: 50%;
+  margin-top: -43%;
+  border:none;
+  color: white;
+  background-color: transparent;
+  padding:5px;
+  width:22%;
+}
+.button1{
+ 
+}
+
+.button1:hover{
+  font-size: 50px;
+}
+
+.button2{
+  font-family: 'Century Gothic Bold', sans-serif;
+  font-size: 26px;
+  font-style: bold;
+  float:right;
+  text-indent: 50%;
+  margin-top: -43%;
+  
+  border:none;
+  color: white;
+  background-color: transparent;
+  padding:5px;
+  width:22%;
+}
+
+.button2:hover{
+  font-size: 30px;
+}
+
 p{
+  font-family: 'Century Gothic Bold', sans-serif;
+  font-size: 16px;
   font-size: 20px;
   color:#FDA920;
 }
 
+h2{
+  font-size: 30px;
+}
 
 .uppernav{
   background-color: #FDA920;
-  width: 100%;
+  background-size: cover;
+  width: 110%;
+  height: 100px;
 }
+
 a{
+  font-family: 'Century Gothic Bold', sans-serif;
+  font-size: 16px;
   color: #FDA920;
   font-size: 20px;
+}
+
+.logo {
+  background-image: url('../images/Logo_black.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: -1%;
+  justify-content: left;
+  margin-top: -1.5%;
+  height:170px;
+  width:170px;
 }
 
 #logo{
   display: inline-block;
   align: left;
-}
-#welcome{
-  display: inline-block;
-  align: right;
 }
 
 .gold-title{
@@ -37,26 +118,33 @@ a{
   color: whitesmoke;
 }
 .welcome{
-  font-size: 20px;
+  font-family: 'Century Gothic Bold', sans-serif;
+  font-size: 30px;
+
   text-align: center;
-  font-style: italic;
+  color: white;
+  margin-top: -6%;
+  margin-bottom: -1.5%;
+
 }
 .headline{
   background-repeat: no-repeat;
-  background-position: 125px;
   background-size: cover;
 
 }
 .headline h3{
+  font-family: 'Century Gothic Bold', sans-serif;
+  font-size: 140px;
   display: inline-block;
   align-items: center;
+  margin-top: 180px;
+  margin-bottom: -5px;
   height: 30vh;
-  font-size: 35px;
 }
 .description{
-  background-image: url("https://cdn.discordapp.com/attachments/974011225849614346/974873208073375744/Login_BG.jpg");
+  font-family: 'Century Gothic Bold', sans-serif;
   background-repeat: no-repeat;
   background-size: 100%;
+  height: 300px;
   padding: 20px;
 }
-

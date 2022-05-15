@@ -22,5 +22,4 @@ urlpatterns = [
     path('app/', include('myapp.urls')),
     path('admin/', admin.site.urls),
     path('videos/', include('Videos.urls'))
-    
 ]
