@@ -1,0 +1,7 @@
+.background-image{
+    background-image: url(./images/Login_Signup_Background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 100vh;
+}

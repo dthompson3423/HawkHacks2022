@@ -1,10 +1,18 @@
+.background-image{
+  background-image: '/Login_Signup_Background.png';
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 100vh
+}
 
 body{
-  background-image: url('https://cdn.discordapp.com/attachments/974011225849614346/974873208073375744/Login_BG.jpg%27');
+  background-image: url('../images/Login_Signup_Background.png');
   background-repeat: no-repeat;
   background-size: cover;
   font-family: Verdana;
   text-align: center;
+  height:100vh;
 }
 h2 {
   color: white;
