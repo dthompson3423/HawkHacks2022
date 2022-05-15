@@ -3,6 +3,11 @@
   src: url(../font/CenturyGothic.ttf);
 }
 
+@font-face {
+  font-family: 'Century Gothic Bold';
+  src: url(../font/gothicb.ttf);
+}
+
 .background-image{
   background-image: '/Login_Signup_Background.png';
   background-size: contain;
@@ -12,26 +17,28 @@
 }
 
 body{
+  font-family: 'Century Gothic', sans-serif;
   background-image: url('../images/Login_Signup_Background.png');
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
-  font-family: Verdana;
   text-align: center;
   height:100vh;
 }
 h2 {
-  font-family: 'CenturyGothic', sans-serif;
-
+  font-family: 'Century Gothic Bold', sans-serif;
+  font-size: 50px;
+  margin-top: -4%;
+  margin-bottom: -0.0%;
   color: white;
 }
 
 h3 {
-  font-family: 'CenturyGothic', sans-serif;
+  font-family: 'Century Gothic', sans-serif;
   color: white;
 }
 h3 a{
-  font-family: 'CenturyGothic', sans-serif;
+  font-family: 'Century Gothic', sans-serif;
   color: #FDA920;
 }
 
@@ -52,46 +59,39 @@ img{
   width:350px;
 }
 
+
 .inputField{
-  border: 5px solid #FDA920;
+  font-family: 'Century Gothic Bold', sans-serif;
+  font-size: 16px;
+  background:none;
+  text-align: left;
+  text-indent: 5%;
+  background-color: transparent !important;
+  border:3px solid #FDA920;
   padding: 5px;
   border-radius: 25px;
-  margin: 5px;
-  height: 20px;
-  width: 200px;
-  
+  margin: 15px;
+  height: 40px;
+  width: 300px;
+  color: white;  
 }
+
 #login-page{
-  text-align: center;
-  color:white;
-}
-.inputarea{
-    border: 2px solid #FDA920;
-    padding: 5px;
-    border-radius: 25px;
-    margin: 5px;
-    background-color: #d3d3d3;
-    width: 40%;
-    margin: auto;
-}
-
-input{
-  text-align: center;
-  width: 30%;
-  height: auto;
-  border: 0px;
-  background-color: #d3d3d3;
-  align-self: center;
   color:white;
 }
 
-
-.button{
-  font-family: 'CenturyGothic', sans-serif;
+button{
+  font-family: 'Century Gothic Bold', sans-serif;
   font-size: 40px;
+  font-style: bold;
+  margin-top: 1%;
   border:none;
   color: #FDA920;
   background-color: transparent;
   padding:5px;
   width:22%;
+}
+
+button:hover{
+  font-size: 50px;
 }

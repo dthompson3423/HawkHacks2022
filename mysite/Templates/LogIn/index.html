@@ -26,12 +26,13 @@
     <title>Login</title>
 </head>
 <body>
+  <div class="logo"></div>
     <div class="login-page" id="login-page">
+        
         <div class="container container--login">
-
-          <img height="75" width="75" src="../images/logo.png" alt="logo">
+         
           <br>
-            <h2>Login to your account</h2>
+            <h2>Log in to your account!</h2>
 
             <form  method="post">
                 {% csrf_token %}
@@ -41,7 +42,7 @@
                 <br>
                 <input type="password" class="inputField" name="password" placeholder="Password" required>
                 <br>
-                <button class="button" type="submit">Login</button>
+                <button class="button" type="submit">LOGIN</button>
                 <br>
             </form>
             <h3>Don't have an account?<a href="{% url 'signup' %}"><u> Sign up</u></a></h1>

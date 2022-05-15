@@ -11,7 +11,7 @@ import json
 
 # Create your views here.
 def home(request):
-        return render(request, "/index.html")
+        return render(request, "LogIn/index.html")
 
 def signup(request):
         if request.method == 'POST':
